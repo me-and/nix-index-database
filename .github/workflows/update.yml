@@ -2,8 +2,8 @@ name: "index-generate"
 on:
   workflow_dispatch:
   schedule:
-    # every sunday at 2:51
-    - cron: '51 2 * * 0'
+    # Randomly selected: every Monday at 05:29
+    - cron: '29 5 * * 1'
 jobs:
   update-lock:
     runs-on: ubuntu-latest
