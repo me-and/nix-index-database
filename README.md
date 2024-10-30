@@ -1,6 +1,6 @@
 # nix-index-database
 
-Weekly updated [nix-index](https://github.com/bennofs/nix-index) database for nixos-unstable channel.
+Weekly updated [nix-index](https://github.com/bennofs/nix-index) database for nixos-24.05 channel.
 
 This repository also provides nixos modules and home-manager modules that add a
 `nix-index` wrapper to use the database from this repository.
@@ -30,7 +30,7 @@ Include the nixos module in your configuration:
 ```nix
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
   
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
@@ -59,7 +59,7 @@ You can then call `nix-locate` as usual, it will automatically use the database 
 ```nix
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable-small";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
 
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
@@ -94,7 +94,7 @@ You can then call `nix-locate` as usual, it will automatically use the database 
 {
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
