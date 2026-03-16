@@ -1,3 +1,7 @@
+# Archived
+
+I created this repo when I wanted [nix-index](https://github.com/bennofs/nix-index) databases generated for the NixOS stable channel.  I'm now using nixos-unstable, and I'm also no longer running machines that are so memory constrained that they can't generate the database locally.  As such, I've retired this repository.
+
 # nix-index-database
 
 Weekly updated [nix-index](https://github.com/bennofs/nix-index) database for nixos-24.05 channel.
